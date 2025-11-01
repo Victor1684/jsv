@@ -1,0 +1,162 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header / Navegação */
+header {
+    background-color: #151521;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #0077b5; /* Azul LinkedIn */
+}
+
+/* Seção Inicial / Sobre */
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 150px 20px 100px 20px;
+    background-color: #f4f4f4;
+}
+
+.foto-perfil {
+    width: 220px;       /* largura menor */
+    height: 220px;      /* altura menor */
+    border-radius: 50%; /* circular */
+    object-fit: cover;  /* centraliza e mantém proporção */
+    margin-bottom: 20px;
+    border: 3px solid #222; /* borda fina */
+}
+
+.inicio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.inicio .contato a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.inicio .contato a:hover {
+    color: #0077b5;
+}
+
+.inicio .sobre-mim {
+    max-width: 1000px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #222;
+    text-align: justify;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    scroll-margin-top: 80px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.estyless {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.estyless a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+.estyless a:hover {
+    text-decoration: underline;
+}
+
+/* Formulário */
+form input, form textarea {
+    display: block;
+    width: 0%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.8rem 2rem;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #151521;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/* Responsividade */
+@media(max-width: 768px){
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .inicio .sobre-mim {
+        max-width: 90%;
+    }
+}
